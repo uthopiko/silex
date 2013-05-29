@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>SoundRock</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<!--// Mobile Metas //-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--// Stylesheets //-->
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/skeleton.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/player.css" />
+<link rel="stylesheet" href="css/color.css" />
+<link rel="stylesheet" href="css/fancybox.css" />
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--// Favicons //-->
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="rockit-touch-icon" href="images/rockit-touch-icon.png" />
+<link rel="rockit-touch-icon" sizes="72x72" href="images/rockit-touch-icon-72x72.png" />
+<link rel="rockit-touch-icon" sizes="114x114" href="images/rockit-touch-icon-114x114.png" />
+<!--// Javascript //-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/animatedcollapse.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="js/scrolltopcontrol.js"></script>
+</head>
+<body>
+<!-- Outer Wrapper Start -->
+<div id="outer-wrapper">
+	<!-- Header Start -->
+	<div id="header">
+    	<div class="inner">
+        	<!-- Container Start -->
+            <div class="container">
+                <!-- Logo Start -->
+                <div class="five columns left">
+                    <a href="index.html" class="logo"><img src="images/logo.png" alt="" /></a>
+                </div>
+                <!-- Logo End -->
+                <div class="eleven columns right">
+                    <!-- Top Links Start -->
+                    <ul class="top-links">
+                        <li>
+                            <h4 class="colr">Search Music</h4>
+                            <div id="search-box">
+                                <input name="" value="Enter any keyword"
+                                onfocus="if(this.value=='Enter any keyword') {this.value='';}"
+                                onblur="if(this.value=='') {this.value='Enter any keyword';}" type="text" class="bar" />
+                                <button>Search</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:animatedcollapse.toggle('login-box')" class="colr">LOG IN</a>
+                            <div id="login-box">
+                                <h4 class="white backcolr">User Login <a href="javascript:animatedcollapse.hide('login-box')" class="closeit">&nbsp;</a></h4>
+                                <ul>
+                                    <li>
+                                        <input name="" value="yourname@email.com"
+                                        onfocus="if(this.value=='yourname@email.com') {this.value='';}"
+                                        onblur="if(this.value=='') {this.value='yourname@email.com';}"   type="text" class="bar" />
+                                    </li>
+                                    <li>
+                                        <input name="" value="password"
+                                        onfocus="if(this.value=='password') {this.value='';}"
+                                        onblur="if(this.value=='') {this.value='password';}"   type="password" class="bar" />
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="left" />
+                                        <p>Remember me</p>
+                                        <a href="#" class="right">Forget Password?</a>
+                                    </li>
+                                    <li>
+                                        <button class="backcolrhover">Login</button>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Top Links End -->
+                </div>
+                <!-- Navigation Start -->
+                <div class="navigation">
+                	<div id="smoothmenu1" class="ddsmoothmenu">
+                    	<ul id="nav">
+                        	<li><a href="index.html">Home</a></li>
+                            <li><a href="news.html">NEWS</a></li>
+                            <li><a href="#">Albums</a>
+                            	<ul>
+                                	<li><a href="albums.html">Albums</a></li>
+                                    <li><a href="album-detail.html">Album Detail</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Blog</a>
+                            	<ul>
+                                	<li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog-detail.html">Blog Detail</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="gigs.html">GIGS</a></li>
+                            <li><a href="#">Gallery</a>
+                            	<ul>
+                                	<li><a href="gallery-two-column.html">Gallery - Two Column</a></li>
+                                    <li><a href="gallery-three-column.html">Gallery - Three Column</a></li>
+                                    <li><a href="gallery-four-column.html">Gallery - Four Column</a></li>
+                                    <li><a href="gallery-slideshow.html">Gallery - Slide Show</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li class="current-menu-item"><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="#">BUY THIS THEME</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!-- Navigation End -->
+                <div class="clear"></div>
+            </div>
+            <!-- Container End -->
+        </div>
+    </div>
+    <!-- Header End -->
+    <div class="clear"></div>
+    <!-- Banner Start -->
+    <div id="sub-banner">
+    	<div class="in">
+        	<iframe width="960" height="210" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=51.500141,-0.115614&amp;spn=0.018941,0.052314&amp;t=m&amp;z=15&amp;output=embed"></iframe>
+        </div>
+    </div>
+    <!-- Banner End -->
+    <!-- Content Section Start -->
+    <div id="content-sec">
+    	<div class="inner">
+        	<!-- Columns Section Start -->
+            <div class="columns-sec twocol">
+            	<!-- Column Three Start -->
+                <div class="col3">
+                	<div class="contact">
+                    	<h1 class="heading colr">Contact Us</h1>
+                        <!-- Contact Us Start -->
+                        <div class="contact-page">
+                        	<div class="cont-sec">
+                                <div class="thumb">
+                                    <a href="#"><img src="images/img20.jpg" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                    <h3 class="colr">WE ARE ROCKING</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. Suspendisse ac eros nec sapien convallis vulputate rhoncus vel dui. Aliquam urna nunc, lacinia non aliquam in, lobortis at quam. Sed quis elit eu mauris egestas mattis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="inquiry">
+                            	<h1 class="heading colr">Quick Inquary</h1>
+                                <form class="cont-forms">
+                                    <ul>
+                                        <li>
+                                            <input name="" value="Enter Name"
+                                            onfocus="if(this.value=='Enter Name') {this.value='';}"
+                                            onblur="if(this.value=='') {this.value='Enter Name';}" type="text" />
+                                            <span class="img-icon name">&nbsp;</span>
+                                        </li>
+                                        <li>
+                                            <input name="" value="Enter Email"
+                                            onfocus="if(this.value=='Enter Email') {this.value='';}"
+                                            onblur="if(this.value=='') {this.value='Enter Email';}" type="text" />
+                                            <span class="img-icon email">&nbsp;</span>
+                                        </li>
+                                        <li>
+                                            <input name="" value="Enter Company Name"
+                                            onfocus="if(this.value=='Enter Company Name') {this.value='';}"
+                                            onblur="if(this.value=='') {this.value='Enter Company Name';}" type="text" />
+                                            <span class="img-icon company-name">&nbsp;</span>
+                                        </li>
+                                        <li>
+                                            <textarea rows="" cols=""
+                                            onfocus="if(this.value=='Enter Massage') {this.value='';}"
+                                            onblur="if(this.value=='') {this.value='Enter Massage';}" />Enter Massage</textarea>
+                                            <span class="img-icon message">&nbsp;</span>
+                                        </li>
+                                        <li>
+                                            <button>Submit Comment</button>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <!-- Post Detail End -->
+                    </div>
+                </div>
+                <!-- Column One End -->
+                <!-- Column One Start -->
+                <div class="col1 hidemobile">
+                	<!-- Text Widget Start -->
+                	<div class="widget text-widget">
+                    	<h1 class="heading colr">Contact Info</h1>
+                        <p class="bold">
+                            935 W. Webster Ave New Streets
+                            Chicago, IL 60614, NY
+                            Newyork USA
+                        </p>
+                        <p>
+                        	Telephone:  +1 800 548 5486<br />
+                            Fax:  +1 800 547 5479<br />
+                            Toll Free:  +1 800 547 2478<br />
+                            E-mail: mail@companyname.com<br />
+                        </p>
+                        <p>
+                        	<span class="colr">For Booking Events please contact to</span><br />
+                            Eric Simon +44 123 4567 89,<br />
+                            Sales@clubsensation.com<br />
+                        </p>
+                        <p>
+                        	<span class="colr">Buy Tickets</span><br />
+                            Call: (800) 123 4567<br />
+							tickets@soundtrack.com<br />
+                        </p>
+                    </div>
+                    <!-- Text Widget End -->
+                    <!-- Twitter feeds Start -->
+                    <div class="widget tweets noback">
+                    	<h1 class="heading colr">From Twitter</h1>
+                        <ul>
+                        	<li>
+                            	<div class="title">
+                                	<a href="#" class="txthover">User 345 said</a>
+                                    3 mins ago
+                                </div>
+                                <p>
+                                	Esse molestie consequat vel illum dolore eu feugiat bit.ly/45rdf4 at. Nunc putamus parum claram anteposuerit #twitter #feed
+                                </p>
+                            </li>
+                            <li>
+                            	<div class="title">
+                                	<a href="#" class="txthover">User 345 said</a>
+                                    3 mins ago
+                                </div>
+                                <p>
+                                	Esse molestie consequat vel illum dolore eu feugiat bit.ly/45rdf4 at. Nunc putamus parum claram anteposuerit #twitter #feed
+                                </p>
+                            </li>
+                            <li>
+                            	<div class="title">
+                                	<a href="#" class="txthover">User 345 said</a>
+                                    3 mins ago
+                                </div>
+                                <p>
+                                	Esse molestie consequat vel illum dolore eu feugiat bit.ly/45rdf4 at. Nunc putamus parum claram anteposuerit #twitter #feed
+                                </p>
+                            </li>
+                        </ul>
+                        <a href="#" class="buttonone">Follow Us on Twitter</a>
+                    </div>
+                    <!-- Twitter feeds End -->
+                </div>
+                <!-- Column One End -->
+            </div>
+            <!-- Columns Section End -->
+        </div>
+    </div>
+    <!-- Content Section End -->
+    <div class="clear"></div>
+    <!-- Footer Start -->
+    <div id="footer">
+    	<div class="inner">
+        	<!-- // Go to Top // -->
+        	<a href="#top" class="gotop">&nbsp;</a>
+        	<!-- Footer Left Start -->
+            <div class="ft-left">
+            	<h4><a href="#" class="colr">SoundRock The Band</a></h4>
+                <ul class="links">
+                	<li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="albums.html">ALBUMS</a></li>
+                    <li><a href="gigs.html">GIGS</a></li>
+                    <li><a href="about-us.html">ABOUT US</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                </ul>
+                <ul class="social">
+                	<li><a href="#" class="so-fb">&nbsp;</a></li>
+                    <li><a href="#" class="so-twitter">&nbsp;</a></li>
+                    <li><a href="#" class="so-vimeo">&nbsp;</a></li>
+                </ul>
+            </div>
+            <!-- Footer Left End -->
+            <!-- Footer Right Start -->
+            <div class="ft-right">
+            	<div class="contact-us">
+                    <h4 class="colr">Contact Us</h4>
+                    <p>For support, questions or feedback, mail us at </p>
+                    <h4 class="white">Phone: (800) 123 4567<br />contact@soundtrack.com</h4>
+                </div>
+            </div>
+            <!-- Footer Left End -->
+            <!-- Copyrights Start -->
+            <div class="copyrights">
+            	 © Copyright <a href="#">SoundRock</a> 2012- 2015
+            </div>
+            <!-- Copyrights End -->
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <div class="clear"></div>
+</div>
+<!-- Outer Wrapper End -->
+</body>
+</html>

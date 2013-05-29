@@ -1,0 +1,537 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+    .container                                  { position: relative; width: 960px; margin: 0 10px; float:left; padding: 0; }
+    .container .column,
+    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .row                                        { margin-bottom: 20px; }
+	.in-sec										{ width:100%; background:#FFF; border-bottom:#ededed solid 1px; padding:20px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+	.in-sec-nopad								{ padding:0; }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .container .one.column,
+    .container .one.columns                     { width: 40px;  }
+    .container .two.columns                     { width: 100px; }
+    .container .three.columns                   { width: 160px; }
+    .container .four.columns                    { width: 220px; }
+    .container .five.columns                    { width: 280px; }
+    .container .six.columns                     { width: 340px; }
+    .container .seven.columns                   { width: 400px; }
+    .container .eight.columns                   { width: 460px; }
+    .container .nine.columns                    { width: 520px; }
+    .container .ten.columns                     { width: 580px; }
+    .container .eleven.columns                  { width: 640px; }
+    .container .twelve.columns                  { width: 700px; }
+    .container .thirteen.columns                { width: 760px; }
+    .container .fourteen.columns                { width: 820px; }
+    .container .fifteen.columns                 { width: 880px; }
+    .container .sixteen.columns                 { width: 940px; }
+
+    .container .one-third.column                { width: 300px; }
+    .container .two-thirds.column               { width: 620px; }
+
+    /* Offsets */
+    .container .offset-by-one                   { padding-left: 60px;  }
+    .container .offset-by-two                   { padding-left: 120px; }
+    .container .offset-by-three                 { padding-left: 180px; }
+    .container .offset-by-four                  { padding-left: 240px; }
+    .container .offset-by-five                  { padding-left: 300px; }
+    .container .offset-by-six                   { padding-left: 360px; }
+    .container .offset-by-seven                 { padding-left: 420px; }
+    .container .offset-by-eight                 { padding-left: 480px; }
+    .container .offset-by-nine                  { padding-left: 540px; }
+    .container .offset-by-ten                   { padding-left: 600px; }
+    .container .offset-by-eleven                { padding-left: 660px; }
+    .container .offset-by-twelve                { padding-left: 720px; }
+    .container .offset-by-thirteen              { padding-left: 780px; }
+    .container .offset-by-fourteen              { padding-left: 840px; }
+    .container .offset-by-fifteen               { padding-left: 900px; }
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+        .inner										{ width:768px; }
+		.container									{ width:768px; }
+		#banner										{ height:387px; }
+		#banner .banner-in							{ width:768px; height:387px; padding:0px; background:none;}
+		.about-albums								{ width:488px; }
+		.about-albums p								{ font-size:11px; }
+		.col1										{ width:200px; overflow:hidden; }
+		.col2										{ width:288px; overflow:hidden; }
+		.col3										{ width:528px; overflow:hidden; }
+		.ft-left									{ width:485px; }
+		.gotop										{ display:none; }
+		#sub-banner									{ height:237px; }
+		#sub-banner .in								{ width:768px; height:237px; background:none; padding:0px; overflow:hidden; }
+		.ddsmoothmenu ul li a						{ font-size:12px; padding:14px 17px 0; }
+		#album-shelves .heading						{ width:768px; }
+		#album-shelves .inner						{ width:768px; background:none; }
+		.album-list									{ padding:0; margin-left:-30px; }
+		.album-list li								{ margin:8px 0 30px 36px; }
+		
+		#mcs5_container								{ width:488px; }
+		#mcs5_container .customScrollBox			{ width:473px; }
+		#mcs5_container .dragger_container			{ width:352px; top:113px; }
+		#mcs5_container .dragger					{ width:198px; }
+		#mcs5_container .dragger_pressed			{ width:198px; }
+		#mcs5_container .container					{ width:900px; }
+		
+		.late-news li .thumb						{ width:150px; float:left; }
+		.late-news li .thumb img					{ width:100%; }
+		.late-news li .desc							{ width:358px; float:right; padding:0px 0px 0px 0px; position:relative; }
+		.albums-widget .thumb						{ width:60px; position:relative; float:left; }
+		.albums-widget .desc						{ float:left; width:120px; padding:0px 0px 0px 10px; position:relative; }
+		.albums-widget ul li						{ padding:10px 0px; }
+		
+		.album-detail-sec .thumb					{ width:150px; }
+		.album-detail-sec .desc						{ width:358px; }
+		.tracklist li.title							{ width:328px; }
+		.buynow li									{ padding:0 5px; }
+		.heading									{ font-size:18px; }
+		.gig-post .upper-sec						{ height:202px; }
+		.gig-post .desc .txt-sec h3					{ font-size:16px; }
+		.gallery-two-col li							{ width:370px; height:240px; }
+		.gal-caption								{ padding:50px 40px 10px; }
+		.gallery-two-col							{ width:788px; }
+		.gallery-three-col							{ width:789px; }
+		.gallery-three-col li						{ width:239px; height:170px; }
+		.gallery-four-col							{ width:789px; }
+		.gallery-four-col li						{ width:173px; height:130px; }
+		#gallery									{ height:565px; }
+		#gallery #main								{ width:768px; }
+		#gallery #images .slide						{ width:748px; overflow:hidden; }
+		.toggleHolder								{ width:748px; }
+		#gallery #images .slide .caption			{ width:708px; }
+		#gallery .gallery-thumbs					{ width:768px; }
+		.gallery-thumbs .caroufredsel_wrapper		{ width:695px !important; }
+		#gallery #thumbs .thumb						{ width:44px; height:44px; overflow:hidden; }
+		#gallery #prev, #gallery #next				{ bottom:30px; }
+		.contact-page .cont-sec .thumb				{ width:200px; }
+		.contact-page .cont-sec .desc				{ width:308px; }
+		.late-news li.featured .thumb				{ width:100%; }
+		.late-news li.featured .desc				{ width:100%; }
+		.twocol 									{ background:url(../images/twocol-small.gif) repeat-y; }
+		.threecol									{ background:url(../images/threecol-small.gif) repeat-y; }
+		.styles										{ display:none !important; }
+		
+		.container .one.column,
+        .container .one.columns                     { width: 28px; }
+        .container .tw.o.columns                     { width: 76px; }
+        .container .three.columns                   { width: 124px; }
+        .container .four.columns                    { width: 172px; }
+        .container .five.columns                    { width: 220px; }
+        .container .six.columns                     { width: 268px; }
+        .container .seven.columns                   { width: 316px; }
+        .container .eight.columns                   { width: 364px; }
+        .container .nine.columns                    { width: 412px; }
+        .container .ten.columns                     { width: 460px; }
+        .container .eleven.columns                  { width: 508px; }
+        .container .twelve.columns                  { width: 556px; }
+        .container .thirteen.columns                { width: 604px; }
+        .container .fourteen.columns                { width: 652px; }
+        .container .fifteen.columns                 { width: 700px; }
+        .container .sixteen.columns                 { width: 748px; }
+
+        .container .one-third.column                { width: 236px; }
+        .container .two-thirds.column               { width: 492px; }
+
+        /* Offsets */
+        .container .offset-by-one                   { padding-left: 48px; }
+        .container .offset-by-two                   { padding-left: 96px; }
+        .container .offset-by-three                 { padding-left: 144px; }
+        .container .offset-by-four                  { padding-left: 192px; }
+        .container .offset-by-five                  { padding-left: 240px; }
+        .container .offset-by-six                   { padding-left: 288px; }
+        .container .offset-by-seven                 { padding-left: 336px; }
+        .container .offset-by-eight                 { padding-left: 384px; }
+        .container .offset-by-nine                  { padding-left: 432px; }
+        .container .offset-by-ten                   { padding-left: 480px; }
+        .container .offset-by-eleven                { padding-left: 528px; }
+        .container .offset-by-twelve                { padding-left: 576px; }
+        .container .offset-by-thirteen              { padding-left: 624px; }
+        .container .offset-by-fourteen              { padding-left: 672px; }
+        .container .offset-by-fifteen               { padding-left: 720px; }
+		
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+		
+		.inner										{ width:300px; }
+		.container									{ width:300px; margin:0; }
+		.top-links									{ display:none; }
+		#banner										{ height:135px; }
+		#banner .banner-in							{ width:300px; height:113px; padding:0px; background:none;}
+		.nivo-html-caption							{ display:none !important; }
+		.nivo-caption								{ display:none !important; }
+		.nivo-directionNav							{ bottom:17px; }
+		.about-albums								{ width:300px; display:none; }
+		.togglebtn									{ display:none; }
+		.about-albums p								{ font-size:11px; }
+		.nowplaying									{ width:100%; }
+		.jp-volume-bar								{ width:252px !important; }
+		.columns-sec								{ width:300px !important;}
+		div.jp-interface ul.jp-controls a			{ width:73px !important; }
+		.col1										{ width:300px; overflow:hidden; padding:0; margin:0; background:none; }
+		.col2										{ width:300px; overflow:hidden; padding:0; margin:0; background:none; }
+		.col3										{ width:300px; overflow:hidden; }
+		.shade										{ background:none; }
+		ul.news-list li .thumb						{ float:left; width:120px; margin-right:10px; position:relative; }
+		ul.news-list li .desc						{ float:left; padding:0; width:170px; }
+		.ft-left									{ width:300px; }
+		.ft-right									{ display:none; }
+		.gotop										{ display:none; }
+		#sub-banner									{ height:230px; }
+		#sub-banner .in								{ width:300px; height:237px; background:none; padding:0px; overflow:hidden; }
+		.ddsmoothmenu ul li a						{ font-size:12px; padding:14px 17px 0; }
+		#album-shelves .heading						{ width:300px; }
+		#album-shelves .inner						{ width:300px; background:none; }
+		.album-list									{ padding:0; margin-left:-20px; }
+		.album-list li								{ margin:8px 0 10px 20px; width:120px; height:301px; }
+		
+		#mcs5_container								{ width:300px; }
+		#mcs5_container .customScrollBox			{ width:300px; }
+		#mcs5_container .dragger_container			{ width:300px; top:113px; }
+		#mcs5_container .dragger					{ width:300px; }
+		#mcs5_container .dragger_pressed			{ width:100px; }
+		#mcs5_container .container					{ width:900px; }
+		
+		.late-news li .thumb						{ width:100px; float:left; display:none; }
+		.late-news li .thumb img					{ width:100%; }
+		.late-news li .desc							{ width:100%; float:right; padding:0px 0px 0px 0px; position:relative; }
+		.albums-widget .thumb						{ width:120px; position:relative; float:left; }
+		.albums-widget .desc						{ float:left; width:290px; padding:0px 0px 0px 10px; position:relative; }
+		.albums-widget ul li						{ padding:10px 0px; }
+		
+		.album-detail-sec .thumb					{ width:100px; display:none; }
+		.album-detail-sec .desc						{ width:300px; }
+		.tracklist li.title							{ width:220px; }
+		.tracklist li.title p						{ font-size:12px; }
+		.tracklist li.title span					{ font-size:10px; }
+		.buynow li									{ padding:0 5px; }
+		.heading									{ font-size:18px; }
+		.gig-post .upper-sec						{ height:240px; }
+		.gig-post .date								{ height:267px; display:none; }
+		.gig-post .desc								{ padding-left:0px; }
+		.gig-post .desc .thumb						{ left:10px; width:80px; }
+		.gig-post .desc .thumb img					{ width:100%; }
+		.gig-post .desc .txt-sec					{ padding-left:100px; }
+		.gig-post .desc .txt-sec h3					{ font-size:16px; }
+		.gallery-two-col li							{ width:370px; height:240px; }
+		.gal-caption								{ padding:50px 40px 10px; }
+		.gallery-two-col							{ width:320px; }
+		.gallery-two-col li							{ width:136px; height:82px; }
+		.gallery-two-col li	.gal-caption			{ display:none !important; }
+		.gallery-two-col li img						{ width:100%; }
+		.gallery-three-col							{ width:320px; }
+		.gallery-three-col li						{ width:82px; height:52px; }
+		.gallery-three-col li img					{ width:100%; }
+		.gallery-four-col							{ width:320px; }
+		.gallery-four-col li						{ width:56px; height:39px; }
+		.gallery-four-col li img					{ width:100%; }
+		#gallery									{ height:565px; }
+		#gallery #main								{ width:300px; }
+		#gallery #images .slide						{ width:280px; overflow:hidden; }
+		.toggleHolder								{ width:280px; }
+		#gallery #images .slide .caption			{ width:240px; }
+		#gallery .gallery-thumbs					{ width:300px; }
+		.gallery-thumbs .caroufredsel_wrapper		{ width:212px !important; left:45px !important; }
+		#gallery #thumbs .thumb						{ width:44px; height:44px; overflow:hidden; }
+		#gallery #prev, #gallery #next				{ bottom:30px; }
+		.contact-page .cont-sec .thumb				{ width:100px; }
+		.contact-page .cont-sec .desc				{ width:180px; }
+		.late-news li.featured .thumb				{ width:100%; }
+		.late-news li.featured .desc				{ width:100%; }
+		.paging										{ margin:0px 0px 30px 0px; }
+		.buynow li h4								{ display:none; }
+		.hidemobile									{ display:none; }
+		.paging ul li a								{ padding:9px 10px 0; }
+		input[type="text"], 
+		input[type="password"], 
+		input[type="email"], 
+		textarea, 
+		select										{ width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+		
+		.cont-forms ul li input[type="text"], 
+		.cont-forms ul li input[type="password"], 
+		.cont-forms ul li input[type="email"], 
+		.cont-forms ul li textarea, 
+		.cont-forms ul li select					{ width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+		.twocol 									{ background:none; }
+		.threecol									{ background:none; }
+		.logo										{ background:none; width:300px; }
+		.styles										{ display:none !important; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  { width: 300px; margin:0; }
+
+        /* Offsets */
+        .container .offset-by-one,
+        .container .offset-by-two,
+        .container .offset-by-three,
+        .container .offset-by-four,
+        .container .offset-by-five,
+        .container .offset-by-six,
+        .container .offset-by-seven,
+        .container .offset-by-eight,
+        .container .offset-by-nine,
+        .container .offset-by-ten,
+        .container .offset-by-eleven,
+        .container .offset-by-twelve,
+        .container .offset-by-thirteen,
+        .container .offset-by-fourteen,
+        .container .offset-by-fifteen { padding-left: 0; }
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+		.inner										{ width:420px; }
+		.container									{ width:420px; margin:0; }
+		.top-links									{ display:none; }
+		#banner										{ height:180px; }
+		#banner .banner-in							{ width:420px; height:160px; padding:0px; background:none;}
+		.theme-default .nivoSlider					{ height:158px !important; overflow:hidden;}
+		.nivo-html-caption							{ display:none !important; }
+		.nivo-caption								{ display:none !important; }
+		.nivo-directionNav							{ bottom:41px; }
+		.about-albums								{ width:420px; display:none; }
+		.togglebtn									{ display:none; }
+		.about-albums p								{ font-size:11px; }
+		.nowplaying									{ width:100%; }
+		.jp-volume-bar								{ width:372px !important; }
+		.columns-sec								{ width:420px !important;}
+		div.jp-interface ul.jp-controls a		{ width:103px !important; }
+		.col1										{ width:420px; overflow:hidden; padding:0; margin:0; background:none; }
+		.col2										{ width:420px; overflow:hidden; padding:0; margin:0; background:none; }
+		.col3										{ width:420px; overflow:hidden; }
+		.shade										{ background:none; }
+		ul.news-list li .thumb						{ float:left; width:120px; margin-right:10px; position:relative; }
+		ul.news-list li .desc						{ float:left; padding:0; width:290px; }
+		.ft-left									{ width:420px; }
+		.ft-right									{ display:none; }
+		.gotop										{ display:none; }
+		#sub-banner									{ height:230px; }
+		#sub-banner .in								{ width:420px; height:237px; background:none; padding:0px; overflow:hidden; }
+		.ddsmoothmenu ul li a						{ font-size:12px; padding:14px 17px 0; }
+		#album-shelves .heading						{ width:420px; }
+		#album-shelves .inner						{ width:420px; background:none; }
+		.album-list									{ padding:0; margin-left:-20px; }
+		.album-list li								{ margin:8px 0 10px 20px; width:180px; height:323px; }
+		
+		#mcs5_container								{ width:420px; }
+		#mcs5_container .customScrollBox			{ width:420px; }
+		#mcs5_container .dragger_container			{ width:420px; top:113px; }
+		#mcs5_container .dragger					{ width:420px; }
+		#mcs5_container .dragger_pressed			{ width:100px; }
+		#mcs5_container .container					{ width:900px; }
+		
+		.late-news li .thumb						{ width:120px; float:left; }
+		.late-news li .thumb img					{ width:100%; }
+		.late-news li .desc							{ width:100%; float:right; padding:0px 0px 0px 0px; position:relative; }
+		.albums-widget .thumb						{ width:120px; position:relative; float:left; }
+		.albums-widget .desc						{ float:left; width:290px; padding:0px 0px 0px 10px; position:relative; }
+		.albums-widget ul li						{ padding:10px 0px; }
+		
+		.album-detail-sec .thumb					{ width:150px; }
+		.album-detail-sec .desc						{ width:100%; }
+		.tracklist li.title							{ width:220px; }
+		.tracklist li.title p						{ font-size:12px; }
+		.tracklist li.title span					{ font-size:10px; }
+		.buynow li									{ padding:0 5px; }
+		.heading									{ font-size:18px; }
+		.gig-post .upper-sec						{ height:287px; }
+		.gig-post .date								{ height:267px; }
+		.gig-post .desc .txt-sec h3					{ font-size:16px; }
+		.gallery-two-col li							{ width:370px; height:240px; }
+		.gal-caption								{ padding:50px 40px 10px; }
+		.gallery-two-col							{ width:440px; }
+		.gallery-two-col li							{ width:196px; height:118px; }
+		.gallery-two-col li	.gal-caption			{ display:none !important; }
+		.gallery-two-col li img						{ width:100%; }
+		.gallery-three-col							{ width:440px; }
+		.gallery-three-col li						{ width:122px; height:77px; }
+		.gallery-three-col li img					{ width:100%; }
+		.gallery-four-col							{ width:440px; }
+		.gallery-four-col li						{ width:86px; height:59px; }
+		.gallery-four-col li img					{ width:100%; }
+		#gallery									{ height:565px; }
+		#gallery #main								{ width:420px; }
+		#gallery #images .slide						{ width:400px; overflow:hidden; }
+		.toggleHolder								{ width:400px; }
+		#gallery #images .slide .caption			{ width:360px; }
+		#gallery .gallery-thumbs					{ width:420px; }
+		.gallery-thumbs .caroufredsel_wrapper		{ width:320px !important; left:51px !important; }
+		#gallery #thumbs .thumb						{ width:44px; height:44px; overflow:hidden; }
+		#gallery #prev, #gallery #next				{ bottom:30px; }
+		.contact-page .cont-sec .thumb				{ display:none; }
+		.contact-page .cont-sec .desc				{ width:400px; }
+		.late-news li.featured .thumb				{ width:100%; }
+		.late-news li.featured .desc				{ width:100%; }
+		.paging										{ margin:0px 0px 30px 0px; }
+		.buynow li h4								{ display:none; }
+		.hidemobile									{ display:none; }
+		input[type="text"], 
+		input[type="password"], 
+		input[type="email"], 
+		textarea, 
+		select										{ width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+		
+		.cont-forms ul li input[type="text"], 
+		.cont-forms ul li input[type="password"], 
+		.cont-forms ul li input[type="email"], 
+		.cont-forms ul li textarea, 
+		.cont-forms ul li select					{ width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+		.twocol 									{ background:none; }
+		.threecol									{ background:none; }
+		.styles										{ display:none !important; }
+		
+		
+		
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column { width: 420px; margin:0; }
+    }
+/* menu icon */
+#menu-icon {
+	display: none; /* hide menu icon initially */
+}
+@media screen and (max-width: 768px) {
+	#smoothmenu1 									{ position:relative; width:100%; }
+	#menu-icon 										{ 
+														color:#fff; width:100%; height:40px; background:#333333; padding:8px 10px 0 10px; cursor:pointer; 
+														margin:4px 0px 0px 0px; display:block; font-size:20px; text-transform:uppercase; 
+														font-family: 'Oswald', sans-serif; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;
+														box-sizing:border-box;
+													}
+	#menu-icon:hover 								{ background-color:#000; }
+	#menu-icon.active 								{ background-color:#000; }
+	#nav 											{ 
+														clear:both; position:absolute; top:38px; width:100%; z-index:10000; padding:5px 0px; background:#000; 
+														display:none;
+													}
+	#nav li 										{ clear:both; float:none; margin:2px 0; width:100%; display:block; }
+	#nav a, #nav ul a 								{ 
+														font:inherit; background:none; display:inline-block; padding:10px 10px 0px 10px; color:#fff;
+														border:none; width:100%; font-size:14px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;
+														box-sizing:border-box; font-size:14px; text-transform:uppercase; font-family: 'Oswald', sans-serif;
+													}
+	#nav a:hover, 
+	#nav ul a:hover {
+	}
+	#nav ul 										{ width:100% !important; position:static; display:block !important; border:none; background:inherit; }
+	#nav ul li 										{ margin:3px 0 3px 15px; }
+	#nav ul li a 									{ font-size:12px; font-family:Arial, Helvetica, sans-serif; }
+	.ddsmoothmenu ul li ul li:first-child 			{ padding-top:0px; }
+}
+
+@media screen and (min-width: 768px) {
+	#nav 											{ display:block !important; }
+}
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }

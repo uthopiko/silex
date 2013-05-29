@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>SoundRock</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<!--// Mobile Metas //-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--// Stylesheets //-->
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/skeleton.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/player.css" />
+<link rel="stylesheet" href="css/color.css" />
+<link rel="stylesheet" href="css/fancybox.css" />
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--// Favicons //-->
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="rockit-touch-icon" href="images/rockit-touch-icon.png" />
+<link rel="rockit-touch-icon" sizes="72x72" href="images/rockit-touch-icon-72x72.png" />
+<link rel="rockit-touch-icon" sizes="114x114" href="images/rockit-touch-icon-114x114.png" />
+<!--// Javascript //-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/animatedcollapse.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="js/scrolltopcontrol.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/mod.js"></script>
+<script type="text/javascript" src="js/circle.js"></script>
+<script type="text/javascript" src="js/play.js"></script>
+
+</head>
+<body>
+<div style="width: 0px; height: 0px;" class="cp-jplayer jquery_jplayer_1">
+	<img style="width: 0px; height: 0px; display: none;" id="jp_poster_0">
+    <audio src="js/Miaow-07-Bubble.oga" preload="metadata" ></audio>
+</div>
+<div style="width: 0px; height: 0px;" class="cp-jplayer jquery_jplayer_2">
+	<img style="width: 0px; height: 0px; display: none;" id="jp_poster_0">
+    <audio src="js/Miaow-07-Bubble.oga" preload="metadata" ></audio>
+</div>
+<div style="width: 0px; height: 0px;" class="cp-jplayer jquery_jplayer_3">
+	<img style="width: 0px; height: 0px; display: none;" id="jp_poster_0">
+    <audio src="js/Miaow-07-Bubble.oga" preload="metadata" ></audio>
+</div>
+<div style="width: 0px; height: 0px;" class="cp-jplayer jquery_jplayer_4">
+	<img style="width: 0px; height: 0px; display: none;" id="jp_poster_0">
+    <audio src="js/Miaow-07-Bubble.oga" preload="metadata" ></audio>
+</div>
+<div style="width: 0px; height: 0px;" class="cp-jplayer jquery_jplayer_5">
+	<img style="width: 0px; height: 0px; display: none;" id="jp_poster_0">
+    <audio src="js/Miaow-07-Bubble.oga" preload="metadata" ></audio>
+</div>
+<div style="width: 0px; height: 0px;" class="cp-jplayer jquery_jplayer_6">
+	<img style="width: 0px; height: 0px; display: none;" id="jp_poster_0">
+    <audio src="js/Miaow-07-Bubble.oga" preload="metadata" ></audio>
+</div>
+<!-- Outer Wrapper Start -->
+<div id="outer-wrapper">
+	<!-- Header Start -->
+	<div id="header">
+    	<div class="inner">
+        	<!-- Container Start -->
+            <div class="container">
+                <!-- Logo Start -->
+                <div class="five columns left">
+                    <a href="index.html" class="logo"><img src="images/logo.png" alt="" /></a>
+                </div>
+                <!-- Logo End -->
+                <div class="eleven columns right">
+                    <!-- Top Links Start -->
+                    <ul class="top-links">
+                        <li>
+                            <h4 class="colr">Search Music</h4>
+                            <div id="search-box">
+                                <input name="" value="Enter any keyword"
+                                onfocus="if(this.value=='Enter any keyword') {this.value='';}"
+                                onblur="if(this.value=='') {this.value='Enter any keyword';}" type="text" class="bar" />
+                                <button>Search</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:animatedcollapse.toggle('login-box')" class="colr">LOG IN</a>
+                            <div id="login-box">
+                                <h4 class="white backcolr">User Login <a href="javascript:animatedcollapse.hide('login-box')" class="closeit">&nbsp;</a></h4>
+                                <ul>
+                                    <li>
+                                        <input name="" value="yourname@email.com"
+                                        onfocus="if(this.value=='yourname@email.com') {this.value='';}"
+                                        onblur="if(this.value=='') {this.value='yourname@email.com';}"   type="text" class="bar" />
+                                    </li>
+                                    <li>
+                                        <input name="" value="password"
+                                        onfocus="if(this.value=='password') {this.value='';}"
+                                        onblur="if(this.value=='') {this.value='password';}"   type="password" class="bar" />
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="left" />
+                                        <p>Remember me</p>
+                                        <a href="#" class="right">Forget Password?</a>
+                                    </li>
+                                    <li>
+                                        <button class="backcolrhover">Login</button>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Top Links End -->
+                </div>
+                <!-- Navigation Start -->
+                <div class="navigation">
+                	<div id="smoothmenu1" class="ddsmoothmenu">
+                    	<ul id="nav">
+                        	<li><a href="index.html">Home</a></li>
+                            <li><a href="news.html">NEWS</a></li>
+                            <li class="current-menu-item"><a href="#">Albums</a>
+                            	<ul>
+                                	<li><a href="albums.html">Albums</a></li>
+                                    <li><a href="album-detail.html">Album Detail</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Blog</a>
+                            	<ul>
+                                	<li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog-detail.html">Blog Detail</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="gigs.html">GIGS</a></li>
+                            <li><a href="#">Gallery</a>
+                            	<ul>
+                                	<li><a href="gallery-two-column.html">Gallery - Two Column</a></li>
+                                    <li><a href="gallery-three-column.html">Gallery - Three Column</a></li>
+                                    <li><a href="gallery-four-column.html">Gallery - Four Column</a></li>
+                                    <li><a href="gallery-slideshow.html">Gallery - Slide Show</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="#">BUY THIS THEME</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!-- Navigation End -->
+                <div class="clear"></div>
+            </div>
+            <!-- Container End -->
+        </div>
+    </div>
+    <!-- Header End -->
+    <div class="clear"></div>
+    <!-- Banner Start -->
+    <div id="sub-banner">
+    	<div class="in">
+        	<a href="#"><img src="images/sub-banner3.jpg" alt="" /></a>
+        </div>
+    </div>
+    <!-- Banner End -->
+    <!-- Content Section Start -->
+    <div id="content-sec">
+    	<div class="inner">
+        	<!-- Columns Section Start -->
+            <div class="columns-sec twocol">
+            	<!-- Column Three Start -->
+                <div class="col3">
+                	<div class="album-detail">
+                    	<h1 class="heading colr">ME AND MY LIFE</h1>
+                        <!-- Album Detail Start -->
+                        <div class="album-detail-sec">
+                        	<div class="thumb">
+                            	<a href="#"><img src="images/img16.jpg" alt="" /></a>
+                            </div>
+                            <div class="desc">
+                                <p class="release">Release Date: 7/3/2012</p>
+                                <p>
+                                	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa malesuada mi elementum elementum. Suspendisse ac eros nec sapien convallis vulputate rhoncus vel dui. Aliquam urna nuncLorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <p>
+                                	Aenean quis massa malesuada mi elementum elementum. Suspendisse ac eros nec sapien convallis vulputate rhoncus vel dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque tristique dolor vitae tincidunt. Aenean quis malesuada mi elementum elementum. Suspendisse ac eros nec sapien convallis  Aenean quis malesuada mi elementum elementum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <!-- Album Detail End -->
+                        <!-- Album List Start -->
+                        <div class="album-track-list">
+                        	<h2 class="heading colr">Album Tracks</h2>
+                            <div class="tracklist">
+                            	<ul>
+                                	<li class="play">
+                                    	<div class="cp-container cp_container_1">
+                                            <ul class="cp-controls">
+                                                <li><a style="display: block;" href="#" class="cp-play" tabindex="1">&nbsp;</a></li>
+                                                <li><a href="#" class="cp-pause" style="display: none;" tabindex="1">&nbsp;</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="title">
+                                    	<p><a href="#">1. Gonorrhea</a></p>
+                                        <span>feat. Drake</span>
+                                    </li>
+                                    <li class="time">4:22</li>
+                                    <li>
+                                    	<a href="#" class="lyrics"><span>&nbsp;</span></a>
+                                        <a href="#" class="download">Download</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                	<li class="play">
+                                    	<div class="cp-container cp_container_2">
+                                            <ul class="cp-controls">
+                                                <li><a style="display: block;" href="#" class="cp-play" tabindex="1">&nbsp;</a></li>
+                                                <li><a href="#" class="cp-pause" style="display: none;" tabindex="1">&nbsp;</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="title">
+                                    	<p><a href="#">2. Hold Up with my tears</a></p>
+                                        <span>feat. T-Streets</span>
+                                    </li>
+                                    <li class="time">4:11</li>
+                                    <li>
+                                    	<a href="#" class="lyrics"><span>&nbsp;</span></a>
+                                        <a href="#" class="download">Download</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                	<li class="play">
+                                    	<div class="cp-container cp_container_3">
+                                            <ul class="cp-controls">
+                                                <li><a style="display: block;" href="#" class="cp-play" tabindex="1">&nbsp;</a></li>
+                                                <li><a href="#" class="cp-pause" style="display: none;" tabindex="1">&nbsp;</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="title">
+                                    	<p><a href="#">3. With You</a></p>
+                                        <span>feat. Drake</span>
+                                    </li>
+                                    <li class="time">3.49</li>
+                                    <li>
+                                    	<a href="#" class="lyrics"><span>&nbsp;</span></a>
+                                        <a href="#" class="download">Download</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                	<li class="play">
+                                    	<div class="cp-container cp_container_4">
+                                            <ul class="cp-controls">
+                                                <li><a style="display: block;" href="#" class="cp-play" tabindex="1">&nbsp;</a></li>
+                                                <li><a href="#" class="cp-pause" style="display: none;" tabindex="1">&nbsp;</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="title">
+                                    	<p><a href="#">4. I Am Not a Human Being</a></p>
+                                        <span>feat. Drake</span>
+                                    </li>
+                                    <li class="time">4.05</li>
+                                    <li>
+                                    	<a href="#" class="lyrics"><span>&nbsp;</span></a>
+                                        <a href="#" class="download">Download</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                	<li class="play">
+                                    	<div class="cp-container cp_container_5">
+                                            <ul class="cp-controls">
+                                                <li><a style="display: block;" href="#" class="cp-play" tabindex="1">&nbsp;</a></li>
+                                                <li><a href="#" class="cp-pause" style="display: none;" tabindex="1">&nbsp;</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="title">
+                                    	<p><a href="#">5. I’m Single</a></p>
+                                        <span>feat. Drake</span>
+                                    </li>
+                                    <li class="time">5.33</li>
+                                    <li>
+                                    	<a href="#" class="lyrics"><span>&nbsp;</span></a>
+                                        <a href="#" class="download">Download</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                	<li class="play">
+                                    	<div class="cp-container cp_container_6">
+                                            <ul class="cp-controls">
+                                                <li><a style="display: block;" href="#" class="cp-play" tabindex="1">&nbsp;</a></li>
+                                                <li><a href="#" class="cp-pause" style="display: none;" tabindex="1">&nbsp;</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="title">
+                                    	<p><a href="#">6. With You</a></p>
+                                        <span>feat. Drake</span>
+                                    </li>
+                                    <li class="time">3.49</li>
+                                    <li>
+                                    	<a href="#" class="lyrics"><span>&nbsp;</span></a>
+                                        <a href="#" class="download">Download</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="buynow">
+                            	<ul>
+                                    <li><h4 class="colr">BUY NOW FROM</h4></li>
+                                    <li><a href="#"><img src="images/itune.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/amazon.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/soundcloud.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/grooveshark.png" alt="" /></a></li>
+                            	</ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="follow-us">
+                            	<ul>
+                                    <li><h4 class="colr">Listen on</h4></li>
+                                    <li><a href="#"><img src="images/follow-1.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/follow-2.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/follow-3.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/follow-4.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/follow-5.png" alt="" /></a></li>
+                            	</ul>
+                            </div>
+                        </div>
+                        <!-- Album List End -->
+                        <!-- Comments Start -->
+                        <div class="comments">
+                            <h1 class="heading colr">Album comments</h1>
+                            <ul>
+                                <li>
+                                    <div class="avatar">
+                                        <a href="#"><img src="images/avatar1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="desc">
+                                        <h5><a href="#">Gedy Rivera</a></h5>
+                                        <p class="ago">17/09/2010</p>
+                                        <a href="#" class="reply">Reply</a>
+                                        <p class="txt">
+                                        	Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                                        </p>
+                                        <div class="clear"></div>    
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="avatar">
+                                        <a href="#"><img src="images/avatar2.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="desc">
+                                        <h5><a href="#">Mike Miller</a></h5>
+                                        <p class="ago">17/09/2010</p>
+                                        <a href="#" class="reply">Reply</a>
+                                        <p class="txt">
+                                        	Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugitNemo enim ipsam vol. 
+                                        </p>
+                                        <div class="clear"></div>    
+                                    </div>
+                                </li>
+                                <li class="leveltwo">
+                                    <div class="avatar">
+                                        <a href="#"><img src="images/avatar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="desc">
+                                        <h5><a href="#">Gedy Rivera</a></h5>
+                                        <p class="ago">17/09/2010</p>
+                                        <a href="#" class="reply">Reply</a>
+                                        <p class="txt">
+                                        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa malesuada mi elementum elementum. Suspendisse ac eros nec sapien convallis vulputate rhoncus vel dui. Aliquam urna nunc, lacinia non aliquam in, lobortis at quam. Sed quis elit eu mauris egestas mattis. 
+                                        </p>
+                                        <div class="clear"></div>    
+                                    </div>
+                                </li>
+                                <li class="levelthree">
+                                    <div class="avatar">
+                                        <a href="#"><img src="images/avatar4.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="desc">
+                                        <h5><a href="#">Mike Miller</a></h5>
+                                        <p class="ago">17/09/2010</p>
+                                        <a href="#" class="reply">Reply</a>
+                                        <p class="txt">
+                                        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa malesuada m 
+                                        </p>
+                                        <div class="clear"></div>    
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="avatar">
+                                        <a href="#"><img src="images/avatar5.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="desc">
+                                        <h5><a href="#">Gedy Rivera</a></h5>
+                                        <p class="ago">17/09/2010</p>
+                                        <a href="#" class="reply">Reply</a>
+                                        <p class="txt">
+                                        	Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                        </p>
+                                        <div class="clear"></div>    
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                        <!-- Comments End -->
+                        <!-- Leave a Reply Start -->
+                        <div class="leavereply">
+                            <h1 class="heading colr">Album comments</h1>
+                            <form class="forms">
+                            <ul>
+                                <li>
+                                    <input name="" value="Enter Name"
+                                    onfocus="if(this.value=='Enter Name') {this.value='';}"
+                                    onblur="if(this.value=='') {this.value='Enter Name';}" type="text" />
+                                </li>
+                                <li>
+                                    <input name="" value="Enter Email"
+                                    onfocus="if(this.value=='Enter Email') {this.value='';}"
+                                    onblur="if(this.value=='') {this.value='Enter Email';}" type="text" />
+                                </li>
+                                <li>
+                                    <input name="" value="Enter Company Name"
+                                    onfocus="if(this.value=='Enter Company Name') {this.value='';}"
+                                    onblur="if(this.value=='') {this.value='Enter Company Name';}" type="text" />
+                                </li>
+                                <li>
+                                    <textarea rows="" cols=""
+                                    onfocus="if(this.value=='Enter Massage') {this.value='';}"
+                                    onblur="if(this.value=='') {this.value='Enter Massage';}" />Enter Massage</textarea>
+                                </li>
+                                <li>
+                                    <button>Submit Comment</button>
+                                </li>
+                            </ul>
+                            </form>
+                        </div>
+                        <!-- Leave a Reply End -->
+                    </div>
+                </div>
+                <!-- Column One End -->
+                <!-- Column One Start -->
+                <div class="col1 hidemobile">
+                	<!-- Top Sellers Start -->
+                	<div class="widget top-seller">
+                    	<h1 class="heading colr">Top Seller</h1>
+                        <div class="thumb">
+                        	<a href="#"><img src="images/advert1.jpg" alt="" /></a>
+                        </div>
+                        <div class="desc">
+                        	<h4><a href="#" class="white">Smile Dip (Dave Barnes)</a></h4>
+                            <p>
+                            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tellus orci, semper et ornare dictum, varius ut tellus.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Top Sellers End -->
+                    <!-- Recent Posts Start -->
+                    <div class="widget ourteam">
+                    	<h1 class="heading colr">Our Team</h1>
+                        <ul class="teamlist">
+                        	<li>
+                            	<a href="#" class="thumb"><img src="images/img10.jpg" alt="" /></a>
+                                <div class="desc">
+                                	<h4><a href="#" class="white">Rick Jhon Wilson</a></h4>
+                                    <p>Friday, July 06 2012</p>
+                                    <p class="txt">Lorem ipsum dolor sit amet, tetur adipiscing elit...<a href="#">Read More</a></p>
+                                </div>
+                            </li>
+                            <li>
+                            	<a href="#" class="thumb"><img src="images/img11.jpg" alt="" /></a>
+                                <div class="desc">
+                                	<h4><a href="#" class="white">Rick Jhon Wilson</a></h4>
+                                    <p>Friday, July 06 2012</p>
+                                    <p class="txt">Lorem ipsum dolor sit amet, tetur adipiscing elit...<a href="#">Read More</a></p>
+                                </div>
+                            </li>
+                            <li>
+                            	<a href="#" class="thumb"><img src="images/img12.jpg" alt="" /></a>
+                                <div class="desc">
+                                	<h4><a href="#" class="white">Rick Jhon Wilson</a></h4>
+                                    <p>Friday, July 06 2012</p>
+                                    <p class="txt">Lorem ipsum dolor sit amet, tetur adipiscing elit...<a href="#">Read More</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Recent Posts End -->
+                    <!-- Facebook Start -->
+                    <div class="widget facebook">
+                        <a href="#"><img src="images/facebook.jpg" alt="" /></a>
+                    </div>
+                    <!-- Facebook End -->
+                    <!-- Newsletter Start -->
+                    <div class="widget newsletter noback">
+                    	<h1 class="heading colr">Weekly Newsletter</h1>
+                        <input type="text" value="Enter your valid email address" />
+                        <button>SUBMIT</button>
+                    </div>
+                    <!-- Newsletter End -->
+                    <!-- Advertisment Start -->
+                    <div class="widget advert">
+                        <a href="#"><img src="images/advert2.jpg" alt="" /></a>
+                        <span>Advertising</span>
+                    </div>
+                    <!-- Advertisment End -->
+                </div>
+                <!-- Column One End -->
+            </div>
+            <!-- Columns Section End -->
+        </div>
+    </div>
+    <!-- Content Section End -->
+    <div class="clear"></div>
+    <!-- Footer Start -->
+    <div id="footer">
+    	<div class="inner">
+        	<!-- // Go to Top // -->
+        	<a href="#top" class="gotop">&nbsp;</a>
+        	<!-- Footer Left Start -->
+            <div class="ft-left">
+            	<h4><a href="#" class="colr">SoundRock The Band</a></h4>
+                <ul class="links">
+                	<li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="albums.html">ALBUMS</a></li>
+                    <li><a href="gigs.html">GIGS</a></li>
+                    <li><a href="about-us.html">ABOUT US</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                </ul>
+                <ul class="social">
+                	<li><a href="#" class="so-fb">&nbsp;</a></li>
+                    <li><a href="#" class="so-twitter">&nbsp;</a></li>
+                    <li><a href="#" class="so-vimeo">&nbsp;</a></li>
+                </ul>
+            </div>
+            <!-- Footer Left End -->
+            <!-- Footer Right Start -->
+            <div class="ft-right">
+            	<div class="contact-us">
+                    <h4 class="colr">Contact Us</h4>
+                    <p>For support, questions or feedback, mail us at </p>
+                    <h4 class="white">Phone: (800) 123 4567<br />contact@soundtrack.com</h4>
+                </div>
+            </div>
+            <!-- Footer Left End -->
+            <!-- Copyrights Start -->
+            <div class="copyrights">
+            	 © Copyright <a href="#">SoundRock</a> 2012- 2015
+            </div>
+            <!-- Copyrights End -->
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <div class="clear"></div>
+</div>
+<!-- Outer Wrapper End -->
+</body>
+</html>

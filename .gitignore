@@ -1,0 +1,7 @@
+vendor/
+cache/
+logs/
+tmp/
+composer.lock
+web/assets/assetic/*.css
+web/assets/assetic/*.js
