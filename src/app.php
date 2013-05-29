@@ -32,8 +32,12 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
 $app->register(new Silex\Provider\SessionServiceProvider());
 $app->register(new Silex\Provider\SecurityServiceProvider(), array(
     'security.firewalls' => array(
+    	'login' => array(
+			'pattern' => '^/login$',
+			'anonymous' => true,
+		),
         'default' => array(
-            'pattern' => '^.$',
+            'pattern' => '^/admin',
             'anonymous' => true, // Needed as the login path is under the secured area
             'form' => array('login_path' => '/login', 'check_path' => 'login_check'),
             'logout' => array('logout_path' => '/logout'), // url to call for logging out
