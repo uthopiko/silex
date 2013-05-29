@@ -33,9 +33,9 @@ $app->register(new Silex\Provider\SessionServiceProvider());
 $app->register(new Silex\Provider\SecurityServiceProvider(), array(
     'security.firewalls' => array(
         'default' => array(
-            'pattern' => '^/admin',
+            'pattern' => '^.$',
             'anonymous' => true, // Needed as the login path is under the secured area
-            'form' => array('login_path' => '/admin', 'check_path' => 'login_check'),
+            'form' => array('login_path' => '/login', 'check_path' => 'login_check'),
             'logout' => array('logout_path' => '/logout'), // url to call for logging out
             'users' => $app->share(function() use ($app) {
                 // Specific class App\User\UserProvider is described below
@@ -45,7 +45,7 @@ $app->register(new Silex\Provider\SecurityServiceProvider(), array(
     ),
     'security.access_rules' => array(
         // You can rename ROLE_USER as you wish
-        array('^/admin', 'ROLE_USER'),
+        array('^/admin', 'ROLE_USER')
     )
 ));
 
