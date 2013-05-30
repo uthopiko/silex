@@ -32,25 +32,16 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
 $app->register(new Silex\Provider\SessionServiceProvider());
 $app->register(new Silex\Provider\SecurityServiceProvider(), array(
     'security.firewalls' => array(
-    	'login' => array(
-			'pattern' => '^/login$',
-			'anonymous' => true,
-		),
-        'default' => array(
-            'pattern' => '^/admin',
-            'anonymous' => true, // Needed as the login path is under the secured area
-            'form' => array('login_path' => '/login', 'check_path' => 'login_check'),
-            'logout' => array('logout_path' => '/logout'), // url to call for logging out
-            'users' => $app->share(function() use ($app) {
-                // Specific class App\User\UserProvider is described below
-                return new User\UserProvider($app['db']);
-            }),
-        ),
-    ),
-    'security.access_rules' => array(
-        // You can rename ROLE_USER as you wish
-        array('^/admin', 'ROLE_USER')
+    	'admin' => array(
+	        'pattern' => '^/admin',
+	        'http' => true,
+	        'users' => array(
+	            // la contraseña es foo
+	            'admin' => array('ROLE_ADMIN', '5FZ2Z8QIkA7UTZ4BYkoC+GsReLf569mSKDsfods6LYQ8t+a8EW9oaircfMpmaLbPBh4FOBiiFyLfuZmTSUwzZg=='),
+	        ),
+	    )
+	    )
     )
-));
+);
 
 return $app;

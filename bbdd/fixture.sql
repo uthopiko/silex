@@ -1,0 +1,1 @@
+CREATE TABLE new (id int NOT NULL auto_increment, text BLOB NOT NULL,image varchar(255),position int, publish int,deleted_at date, PRIMARY KEY(id));
